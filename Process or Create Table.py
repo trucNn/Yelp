@@ -116,7 +116,15 @@ def process_or_create_table(table_name, dataframe_name=None, summary=False, dele
 # MAGIC
 # MAGIC `process_or_create_table(TBL_NAME, DF_NAME, summary=True, delete=False)`
 # MAGIC
+#<<<<<<< Spark-SQL-Joins
 # MAGIC **Both the name of the table and the name of the DataFrame must be passed as strings.**
+=======
+#<<<<<<< Introduction-to-Windown-Functions
+# MAGIC **Both the name of the table and the name of the DataFrame ust be passed as strings.**
+=======
+# MAGIC **Both the name of the table and the name of the DataFrame must be passed as strings.**
+#>>>>>>> main
+#>>>>>>> main
 # MAGIC
 # MAGIC **If we are calling this method from a notebook that does not contain the DataFrame used to write the table (but we want to rebuild the table from the Parquet files), then the DataFrame name should be omitted or passed as `None`.**
 # MAGIC
@@ -127,11 +135,29 @@ def process_or_create_table(table_name, dataframe_name=None, summary=False, dele
 # MAGIC **NOTE:** Since we want to be able to come back to this notebook and run this cell without creating the DataFrame variable, 
 # MAGIC we need to pass the name of the DataFrame as a string so we can determine if it's a valid variable.  If not, then it will
 # MAGIC be treated the same as if we did not specify a DataFrame.  This allows us to come back to this notebook and just run the 
+#<<<<<<< Spark-SQL-Joins
 # MAGIC function definitions above and then a cell similar to the following cell without first running the code to create `df_some_data`. 
+=======
+#<<<<<<< Introduction-to-Windown-Functions
+# MAGIC function definitions above and then the following cell without first running the code to create `df_bus_reviews`. 
+=======
+# MAGIC function definitions above and then a cell similar to the following cell without first running the code to create `df_some_data`. 
+#>>>>>>> main
+#>>>>>>> main
 # MAGIC
 
 # COMMAND ----------
 
+#<<<<<<< Spark-SQL-Joins
 # TBL_NAME = "some_table"
 # DF_NAME = "df_some_data"
+=======
+#<<<<<<< Introduction-to-Windown-Functions
+# TBL_NAME = "business_reviews_table"
+# DF_NAME = "df_bus_reviews"
+=======
+# TBL_NAME = "some_table"
+# DF_NAME = "df_some_data"
+#>>>>>>> main
+#>>>>>>> main
 # process_or_create_table(TBL_NAME, DF_NAME, summary=True, delete=False)
